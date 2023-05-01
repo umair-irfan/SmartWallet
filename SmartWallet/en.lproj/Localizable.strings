@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SmartWallet
+
+  Created by Umair Irfan on 03/04/2023.
+  
+*/
+
+"app_name" = "Spend Wise";
+"onboarding_caption" = "Manage your spendings wisely.\n\n Get started by cretaing an account or  explore to see waht Spend Wise can do for you.";
+"placeholder_email" = "Email or 92-xxx-xxxxxxx";
+"get_started_text" = "Get Started";
+"login_text" = "Log In";
+"explore_text" = "Explore";
