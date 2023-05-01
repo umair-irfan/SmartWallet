@@ -11,6 +11,7 @@ enum AppButtonType {
     case primary
     case secondary
     case disabled
+    case defualt
 }
 
 fileprivate struct AppButtonStyle: ButtonStyle {
@@ -37,30 +38,32 @@ fileprivate struct AppButtonStyle: ButtonStyle {
             .font(AppFonts.light.font(with: .h2))
         case .disabled:
             configuration.label
-                .frame(width: 250, height: UIConfigurations.buttonHeight)
+//                .frame(width: 250, height: UIConfigurations.buttonHeight)
+                .disabled(true)
             .background(AppColors.secondary.color)
             .cornerRadius(UIConfigurations.cornerRadius)
             .foregroundColor(AppColors.white.color)
             .padding([.leading, .trailing, .top], 10)
             .font(AppFonts.light.font(with: .h2))
+        case .defualt:
+            configuration.label
+                .background(AppColors.background.color)
+                .foregroundColor(AppColors.primary.color)
+                .font(AppFonts.light.font(with: .h2))
         }
     }
 }
 
 struct AppButton<T: View>: View {
     
-    
     let action: () -> Void
     let content: T
     @State var type: AppButtonType = .primary
-    @Binding var isEnabled: Bool
     
-    init(type: AppButtonType, state: Binding<Bool> ,action: @escaping () -> Void, @ViewBuilder content: () -> T) {
+    init(type: AppButtonType ,action: @escaping () -> Void, @ViewBuilder content: () -> T) {
         self.action = action
         self.content = content()
-        self._isEnabled = state
     }
-    
     
     var body: some View {
         Button(action: (action)) {
@@ -71,6 +74,6 @@ struct AppButton<T: View>: View {
                        minHeight: 0,
                        maxHeight: UIConfigurations.buttonHeight)
         }
-        .buttonStyle(!isEnabled ? AppButtonStyle(type: .disabled) : AppButtonStyle(type: type))
+        .buttonStyle(AppButtonStyle(type: type))
     }
 }

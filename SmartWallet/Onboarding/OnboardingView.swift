@@ -10,11 +10,7 @@ import SwiftUI
 struct OnboardingView: View {
     
     
-    @State var viewModel: OnboardingViewModel!
-    
-    @State private var username: String = ""
-    @State var isValidEmail: Bool = true
-    @State var isValidPhone: Bool = false
+    @ObservedObject var viewModel: OnboardingViewModel = OnboardingViewModel()
     
     var body: some View {
         NavigationView {
@@ -36,8 +32,8 @@ struct OnboardingView: View {
                     
                     Spacer()
                     VStack(spacing: 5) {
-                        AppTextField(placeHolder: StringKeys.Generic.EmailPlaceholder.get(), text: $username)
-                        AppButton(type: .primary, state: $isValidPhone) {
+                        AppTextField(placeHolder: StringKeys.Generic.EmailPlaceholder.get(), text: $viewModel.email)
+                        AppButton(type: viewModel.getStartedButton()) {
                            
                         } content: {
                             Text(StringKeys.Generic.GetStarted.get().format(.uppercased))
@@ -45,30 +41,26 @@ struct OnboardingView: View {
                         
                     }
                     HStack {
-                        Button(StringKeys.Generic.Login.get().format(.uppercased)) {
-                            
-                            isValidPhone = true
+                        AppButton(type: .defualt) {
+                           
+                        } content: {
+                            Text(StringKeys.Generic.Login.get().format(.uppercased))
                         }
                         .padding([.leading, .trailing], 10)
                         .padding([.top], 25)
-                        .background(AppColors.background.color)
-                        .foregroundColor(AppColors.primary.color)
-                        .font(AppFonts.regular.font(with: .h2))
-                        .cornerRadius(UIConfigurations.cornerRadius)
+                        
                         Divider()
                             .background(AppColors.primary.color)
                             .frame(height: 30)
                             .padding([.top, .leading, .trailing], 25)
+                        
+                        AppButton(type: .defualt) {
                            
-                        Button(StringKeys.Generic.Explore.get().format(.uppercased)) {
-                            
+                        } content: {
+                            Text(StringKeys.Generic.Explore.get().format(.uppercased))
                         }
                         .padding([.leading, .trailing], 10)
                         .padding([.top], 25)
-                        .background(AppColors.background.color)
-                        .foregroundColor(AppColors.primary.color)
-                        .font(AppFonts.light.font(with: .h2))
-                        .cornerRadius(UIConfigurations.cornerRadius)
                     }
                 }
             }.keyboardManager()
