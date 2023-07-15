@@ -15,8 +15,6 @@ struct UIConfigurations {
 }
 
 struct AppTextFieldConfig {
-    
-   
    
     static let defaultTextColor : Color = AppColors.primaryText.color
     static let darkModeTextColor : Color = AppColors.primaryText.color

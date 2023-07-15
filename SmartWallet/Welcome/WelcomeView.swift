@@ -1,5 +1,5 @@
 //
-//  OnboardingView.swift
+//  WelcomeView.swift
 //  SmartWallet
 //
 //  Created by Umair Irfan on 30/03/2023.
@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
+struct WelcomeView<ViewModel>: View where ViewModel: WelcomeViewModelType  {
     
+    @StateObject var viewModel: ViewModel
     
-    @ObservedObject var viewModel: OnboardingViewModel = OnboardingViewModel()
+    init(viewModel: ViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         NavigationView {
@@ -32,8 +35,8 @@ struct OnboardingView: View {
                     
                     Spacer()
                     VStack(spacing: 5) {
-                        AppTextField(placeHolder: StringKeys.Generic.EmailPlaceholder.get(), text: $viewModel.email)
-                        AppButton(type: viewModel.getStartedButton()) {
+                        AppTextField(placeHolder: StringKeys.Generic.EmailPlaceholder.get(), text: .constant(viewModel.input.email.value))
+                        AppButton(type: viewModel.output.startButtonType.value) {
                            
                         } content: {
                             Text(StringKeys.Generic.GetStarted.get().format(.uppercased))
@@ -71,6 +74,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        WelcomeView(viewModel: WelcomeViewModel())
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7C038CA629BC602A00581568 /* SmartWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C038CA529BC602A00581568 /* SmartWalletApp.swift */; };
-		7C038CA829BC602A00581568 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C038CA729BC602A00581568 /* ContentView.swift */; };
 		7C038CAA29BC602D00581568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C038CA929BC602D00581568 /* Assets.xcassets */; };
 		7C038CAD29BC602D00581568 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C038CAC29BC602D00581568 /* Preview Assets.xcassets */; };
 		7C038CB729BC602E00581568 /* SmartWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C038CB629BC602E00581568 /* SmartWalletTests.swift */; };
@@ -18,7 +17,7 @@
 		7C4EC1BB29DB5E1A007947A1 /* TextField+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC1BA29DB5E1A007947A1 /* TextField+Modifiers.swift */; };
 		7C4EC1BE29DB61E0007947A1 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC1BD29DB61E0007947A1 /* UIConfigurations.swift */; };
 		7C4EC1C129DC5FF9007947A1 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC1C029DC5FF9007947A1 /* AppTextField.swift */; };
-		7CC38B3129D5CBC600AEABFF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC38B3029D5CBC600AEABFF /* OnboardingView.swift */; };
+		7CC38B3129D5CBC600AEABFF /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC38B3029D5CBC600AEABFF /* WelcomeView.swift */; };
 		7CC38B3529D5D17C00AEABFF /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC38B3429D5D17C00AEABFF /* AppBackgroundView.swift */; };
 		7CC38B3729D6025400AEABFF /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC38B3629D6025400AEABFF /* AppColors.swift */; };
 		7CC38B3D29D80F4E00AEABFF /* Raqi-2.0-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC38B3829D80F4E00AEABFF /* Raqi-2.0-Book.otf */; };
@@ -38,7 +37,7 @@
 		7CCDED3029DB14F200A03D85 /* String+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDED2F29DB14F200A03D85 /* String+Extentions.swift */; };
 		7CCDED3229DB17F600A03D85 /* Int+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDED3129DB17F600A03D85 /* Int+Extentions.swift */; };
 		7CCDED3429DB1A4C00A03D85 /* StringKeys+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDED3329DB1A4C00A03D85 /* StringKeys+Extentions.swift */; };
-		7CE5B1BB29FF969000A37A8B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE5B1BA29FF969000A37A8B /* OnboardingViewModel.swift */; };
+		7CE5B1BB29FF969000A37A8B /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE5B1BA29FF969000A37A8B /* WelcomeViewModel.swift */; };
 		7CF52EBA29DF23F900DED5C8 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF52EB929DF23F900DED5C8 /* AppButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +61,6 @@
 /* Begin PBXFileReference section */
 		7C038CA229BC602A00581568 /* SmartWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C038CA529BC602A00581568 /* SmartWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartWalletApp.swift; sourceTree = "<group>"; };
-		7C038CA729BC602A00581568 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C038CA929BC602D00581568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C038CAC29BC602D00581568 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C038CB229BC602E00581568 /* SmartWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +72,7 @@
 		7C4EC1BA29DB5E1A007947A1 /* TextField+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Modifiers.swift"; sourceTree = "<group>"; };
 		7C4EC1BD29DB61E0007947A1 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
 		7C4EC1C029DC5FF9007947A1 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
-		7CC38B3029D5CBC600AEABFF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7CC38B3029D5CBC600AEABFF /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7CC38B3429D5D17C00AEABFF /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
 		7CC38B3629D6025400AEABFF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		7CC38B3829D80F4E00AEABFF /* Raqi-2.0-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raqi-2.0-Book.otf"; sourceTree = "<group>"; };
@@ -96,7 +94,7 @@
 		7CCDED2F29DB14F200A03D85 /* String+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extentions.swift"; sourceTree = "<group>"; };
 		7CCDED3129DB17F600A03D85 /* Int+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extentions.swift"; sourceTree = "<group>"; };
 		7CCDED3329DB1A4C00A03D85 /* StringKeys+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringKeys+Extentions.swift"; sourceTree = "<group>"; };
-		7CE5B1BA29FF969000A37A8B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		7CE5B1BA29FF969000A37A8B /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		7CF52EB929DF23F900DED5C8 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,13 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				7C038CA529BC602A00581568 /* SmartWalletApp.swift */,
-				7C038CA729BC602A00581568 /* ContentView.swift */,
-				7CE5B1B929FF967700A37A8B /* Onboarding */,
+				7CE5B1B929FF967700A37A8B /* Welcome */,
 				7C4EC1B829DB5CF9007947A1 /* SignupView.swift */,
 				7C4EC1BF29DC5FC1007947A1 /* GenericView */,
 				7C4EC1BC29DB5E25007947A1 /* Modifiers */,
 				7CCDED2429DADC8B00A03D85 /* Utilites */,
 				7CCDED2329DADC6F00A03D85 /* Extentions */,
+				7C3C60B72A4C81DD00546CF0 /* Dependency */,
 				7CC38B4329D80F9900AEABFF /* Info.plist */,
 				7C038CA929BC602D00581568 /* Assets.xcassets */,
 				7CC38B4229D80F5900AEABFF /* AppFont */,
@@ -188,6 +186,13 @@
 				7C038CC229BC602E00581568 /* SmartWalletUITestsLaunchTests.swift */,
 			);
 			path = SmartWalletUITests;
+			sourceTree = "<group>";
+		};
+		7C3C60B72A4C81DD00546CF0 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		7C4EC1BC29DB5E25007947A1 /* Modifiers */ = {
@@ -247,13 +252,13 @@
 			path = Utilites;
 			sourceTree = "<group>";
 		};
-		7CE5B1B929FF967700A37A8B /* Onboarding */ = {
+		7CE5B1B929FF967700A37A8B /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				7CC38B3029D5CBC600AEABFF /* OnboardingView.swift */,
-				7CE5B1BA29FF969000A37A8B /* OnboardingViewModel.swift */,
+				7CC38B3029D5CBC600AEABFF /* WelcomeView.swift */,
+				7CE5B1BA29FF969000A37A8B /* WelcomeViewModel.swift */,
 			);
-			path = Onboarding;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +400,7 @@
 			files = (
 				7C4EC1BB29DB5E1A007947A1 /* TextField+Modifiers.swift in Sources */,
 				7CC38B4529D8241900AEABFF /* AppFonts.swift in Sources */,
-				7CC38B3129D5CBC600AEABFF /* OnboardingView.swift in Sources */,
+				7CC38B3129D5CBC600AEABFF /* WelcomeView.swift in Sources */,
 				7CCDED3229DB17F600A03D85 /* Int+Extentions.swift in Sources */,
 				7CCDED2029D9639B00A03D85 /* View+Extension.swift in Sources */,
 				7CCDED1A29D8B7C800A03D85 /* AppFontType.swift in Sources */,
@@ -405,14 +410,13 @@
 				7CCDED3429DB1A4C00A03D85 /* StringKeys+Extentions.swift in Sources */,
 				7CCDED2629DADCD100A03D85 /* AppColors+Extentions.swift in Sources */,
 				7C4EC1C129DC5FF9007947A1 /* AppTextField.swift in Sources */,
-				7C038CA829BC602A00581568 /* ContentView.swift in Sources */,
 				7CC38B3529D5D17C00AEABFF /* AppBackgroundView.swift in Sources */,
 				7CC38B3729D6025400AEABFF /* AppColors.swift in Sources */,
 				7CCDED2E29DB12ED00A03D85 /* StringKeys.swift in Sources */,
 				7CCDED2229D9C27E00A03D85 /* KeyboardManager.swift in Sources */,
 				7CC38B4929D8701D00AEABFF /* UIDevice+Extensions.swift in Sources */,
 				7CCDED3029DB14F200A03D85 /* String+Extentions.swift in Sources */,
-				7CE5B1BB29FF969000A37A8B /* OnboardingViewModel.swift in Sources */,
+				7CE5B1BB29FF969000A37A8B /* WelcomeViewModel.swift in Sources */,
 				7C038CA629BC602A00581568 /* SmartWalletApp.swift in Sources */,
 				7CC38B4729D8611800AEABFF /* UIDevice.swift in Sources */,
 			);

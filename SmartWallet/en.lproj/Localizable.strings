@@ -6,7 +6,7 @@
   
 */
 
-"app_name" = "Spend Wise";
+"app_name" = "Smart Wallet";
 "onboarding_caption" = "Manage your spendings wisely.\n\n Get started by cretaing an account or  explore to see waht Spend Wise can do for you.";
 "placeholder_email" = "Email or 92-xxx-xxxxxxx";
 "get_started_text" = "Get Started";
